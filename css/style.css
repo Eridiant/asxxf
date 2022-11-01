@@ -7431,21 +7431,21 @@ button.strwf_form-button:after {
 }
 
 .contact-modal {
+    display: none;
     position: fixed;
     z-index: 101;
-    top: 0;
-    right: -443px;
-    display: flex;
-    width: 443px;
-    height: 100vh;
-	padding: 9vh 3.3vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* right: -443px; */
+    /* width: 443px; */
     transition: .6s;
     background-color: #fff;
     box-shadow: -1px 0 6px 0 rgba(0, 0, 0, .09);
 }
-.contact-modal.active {
+/* .contact-modal.active {
     right: 0;
-}
+} */
 .contact-modal-wrap {
     width: 100%;
 }
@@ -7456,7 +7456,7 @@ button.strwf_form-button:after {
 	width: 15px;
     height: 16px;
     transition: .5s;
-    border: none;
+    cursor: pointer;
     background: url('../img/design/ico/close.png') center no-repeat transparent;
 }
 .contact-modal-close:hover {
