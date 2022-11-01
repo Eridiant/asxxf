@@ -1,0 +1,82 @@
+body {
+    background-color: #fff;
+}
+.container-bg {
+    height: 100%;
+}
+.header {
+    min-height: 5vh
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+.logo-text {
+    line-height: 1;
+    /* text-shadow: 1px 1px 2px #0009, -1px -1px 2px #0009, 1px -1px 2px #0009, -1px 1px 2px #0009; */
+}
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    min-height: 700px;
+    min-width: 320px;
+}
+.main-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.main-bg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.main .container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.main-wrapper p {
+    text-shadow: 1px 1px 2px #fff, -1px -1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff;
+}
+.main-wrapper span {
+    color: #bfa883;
+}
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.main-buttons a {
+    flex: 1 1 31%;
+    min-width: 132px;
+    max-width: 50%;
+}
+.main-buttons .btn {
+    border-radius: 1.5vh;
+}
+.main-buttons .btn-mail{
+    background-color: #c9b493;
+}
+.main-buttons .btn-vk{
+    background-color: #5c81b0;
+}
+.main-buttons .btn-tg{
+    background-color: #038bcf;
+}
+@media (min-width: 768px) {
+    .main-wrapper {
+        flex-basis: 50%;
+        height: auto;
+        margin-left: auto;
+    }
+}

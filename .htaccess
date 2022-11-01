@@ -1,0 +1,4 @@
+#AddType text/x-server-parsed-html .html .htm
+AddType text/html .htm .html
+AddOutputFilter INCLUDES .htm .html
+AddHandler application/x-httpd-php .html .htm
