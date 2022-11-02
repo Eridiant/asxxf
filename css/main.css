@@ -68,16 +68,29 @@ body {
     max-width: 50%;
 }
 .main-buttons .btn {
+    height: 7vh;
     border-radius: 1.5vh;
 }
 .main-buttons .btn-mail{
     background-color: #c9b493;
 }
+.btn-mail svg{
+    width: 15%;
+    height: 100%;
+}
 .main-buttons .btn-vk{
     background-color: #5c81b0;
 }
+.btn-vk svg{
+    width: 17%;
+    height: 100%;
+}
 .main-buttons .btn-tg{
     background-color: #038bcf;
+}
+.btn-tg svg{
+    width: 19%;
+    height: 100%;
 }
 .main-lead {
     font-family: Oswald;
