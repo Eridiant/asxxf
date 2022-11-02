@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mailBtn.addEventListener('click', (e) => {
         e.preventDefault();
         modal.classList.add('active');
-        document.querySelector('.main-wrapper.main').classList.add('dn');
+        document.querySelector('.main-wrapper.first').classList.add('dn');
     })
 
     let modalClose = document.querySelector('.contact-modal-close');
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modalClose.addEventListener('click', (e) => {
         e.preventDefault();
         modal.classList.remove('active');
-        document.querySelector('.main-wrapper.main').classList.remove('dn');
+        document.querySelector('.main-wrapper.first').classList.remove('dn');
     })
 
     let form = document.querySelector('.form-alt');
