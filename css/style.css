@@ -7437,8 +7437,6 @@ button.strwf_form-button:after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* right: -443px; */
-    /* width: 443px; */
     transition: .6s;
     background-color: #fff;
     box-shadow: -1px 0 6px 0 rgba(0, 0, 0, .09);

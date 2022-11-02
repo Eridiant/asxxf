@@ -9,12 +9,12 @@ body {
 }
 .header {
     min-height: 5vh;
+    padding: 13px 1.7vw 0 1.7vw;
 }
 .header-logo {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    width: 95%;
-    margin: 0 auto;
+    margin-left: auto;
 }
 .logo-text {
     line-height: 1;
@@ -107,8 +107,11 @@ body {
 }
 .main-link a {
     position: relative;
+    display: flex;
+    flex-basis: 5vw;
 }
 .main-link-img {
+    width: 100%;
 }
 .main-link-clr {
     position: absolute;
