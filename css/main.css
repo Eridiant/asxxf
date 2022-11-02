@@ -7,6 +7,9 @@ body {
 .checkbox input {
     margin-right: .5vw;
 }
+.dn {
+    display: none;
+}
 .header {
     min-height: 5vh
 }
@@ -75,6 +78,34 @@ body {
 }
 .main-buttons .btn-tg{
     background-color: #038bcf;
+}
+.main-lead {
+    font-family: Oswald;
+    font-size: max(1.5vw, 27px);
+    line-height: 41px;
+    font-weight: 400;
+    margin-bottom: 2vh;
+}
+.main-link {
+    display: flex;
+    align-items: flex-end;
+    gap: 5%;
+    margin-bottom: 2vh;
+}
+.main-link a {
+    position: relative;
+}
+.main-link-img {
+}
+.main-link-clr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .4s;
+}
+.main-link-clr:hover {
+    opacity: 1;
 }
 @media (min-width: 768px) {
     .main-wrapper {
