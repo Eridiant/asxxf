@@ -1,9 +1,6 @@
 body {
     background-color: #fff;
 }
-.container-bg {
-    height: 100%;
-}
 .checkbox input {
     margin-right: .5vw;
 }
@@ -11,11 +8,13 @@ body {
     display: none;
 }
 .header {
-    min-height: 5vh
+    min-height: 5vh;
 }
 .header-logo {
     display: flex;
     align-items: center;
+    width: 95%;
+    margin: 0 auto;
 }
 .logo-text {
     line-height: 1;
@@ -41,10 +40,11 @@ body {
     width: 100%;
     object-fit: cover;
 }
-.main .container{
+.main .contain{
     display: flex;
-    height: 100%;
-    width: 100%;
+    height: 95%;
+    width: 95%;
+    margin: auto;
     justify-content: center;
     align-items: center;
 }
