@@ -6752,7 +6752,7 @@ body h1 {
         display: block;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     body h1 {
         font-size: 54.5px;
         margin-bottom: 15px;
