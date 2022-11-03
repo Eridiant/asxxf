@@ -6739,7 +6739,7 @@ body h1 {
 }
 @media (max-width: 1023px) {
     body h1 {
-        font-size: 47px;
+        font-size: 54px;
 		text-align: left;
         margin-bottom: 20px;
     }
@@ -6754,7 +6754,7 @@ body h1 {
 }
 @media (max-width: 767px) {
     body h1 {
-        font-size: 44.5px;
+        font-size: 54.5px;
         margin-bottom: 15px;
         text-align: center;
     }

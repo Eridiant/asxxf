@@ -30,10 +30,12 @@ body {
     line-height: 1;
     text-shadow: 1px 1px 2px #fff3, -1px -1px 2px #fff3, 1px -1px 2px #fff3, -1px 1px 2px #fff3;
 }
-@media (max-width: 767.98px) and (orientation: landscape) {
+@media (max-width: 768.98px) and (orientation: portrait) {
     .header {
-        padding-top: 0;
+        padding-top: 10px;
     }
+}
+@media (max-width: 767.98px) {
     .header-logo {
         align-items: flex-start;
     }
@@ -46,7 +48,7 @@ body {
     min-width: 320px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .main-wrapper {
         flex-basis: 50%;
         height: auto;
@@ -75,7 +77,7 @@ body {
     align-items: center;
 }
 .main-wrapper.done p{
-    margin-bottom: 2vh; 
+    margin-bottom: 1rem;
 }
 .main-buttons {
     display: flex;
@@ -153,7 +155,7 @@ body {
 .main h2 {
     margin-bottom: 2.5vh;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .main-wrapper {
         flex-basis: 50%;
         height: auto;
@@ -171,19 +173,42 @@ body {
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
+    h1 {
+        white-space: pre-line;
+    }
     .main {
         background-color: #fffa;
     }
+    .main-wrapper {
+        padding-top: 50px;
+    }
+    .main-wrapper p {
+        text-align: center;
+    }
+    .main-inner {
+        line-height: 1.5;
+    }
 }
-.contact-modal {
-    /* width: 100vw; */
-    line-height: 3vh;
+
+@media (max-width: 768.98px) and (orientation: portrait) {
+    .main-inner {
+        max-width: 430px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-buttons {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .main-inner {
+        text-align: center;
+    }
 }
 .contact-modal li {
-    margin-bottom: 1.1vh;
+    margin-bottom: 7px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .contact-modal {
         width: 75vw;
         min-width: 850px;
@@ -204,7 +229,7 @@ body {
     flex-shrink: 1;
 	padding: 9vh 4vw 9vh 7.7vw;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
     .contact-modal-text, .contact-modal-form-subtitle, .contact-modal-form-text {
         display: none;
     }
@@ -212,7 +237,7 @@ body {
         padding-bottom: 4vh;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .contact-modal-wrap {
         margin-top: -2vh;
         margin-bottom: -2vh;
@@ -220,10 +245,7 @@ body {
         background-color: #eff0f2;
     }
 }
-@media (max-width: 767.98px) and (orientation: landscape) {
-    h1 {
-        white-space: pre-line;
-    }
+@media (max-width: 768.98px) and (orientation: landscape) {
     .contact-modal-wrap {
         display: flex;
         width: 100vw;
@@ -294,12 +316,12 @@ ul.contact-modal-item{
     width: 5px;
     height: 5px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .strwf__radio-label .mb {
         display: none;
     }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
     .checkbox {
         text-align: center;
     }
