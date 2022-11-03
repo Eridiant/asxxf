@@ -95,6 +95,7 @@ body {
 .main-buttons .btn {
     height: 7vh;
     min-height: 50px;
+    max-height: 70px;
     border-radius: 1.5vh;
 }
 .main-buttons svg {
