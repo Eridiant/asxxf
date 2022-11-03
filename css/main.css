@@ -52,6 +52,7 @@ body {
     .main-wrapper {
         flex-basis: 50%;
         height: auto;
+        text-align: center;
         margin-left: auto;
     }
 }
