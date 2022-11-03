@@ -35,7 +35,7 @@ body {
         padding-top: 10px;
     }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
     .header-logo {
         align-items: flex-start;
     }
@@ -52,7 +52,6 @@ body {
     .main-wrapper {
         flex-basis: 50%;
         height: auto;
-        text-align: center;
         margin-left: auto;
     }
 }
@@ -182,6 +181,7 @@ body {
         background-color: #fffa;
     }
     .main-wrapper {
+        text-align: center;
         padding-top: 50px;
     }
     .main-wrapper p {
@@ -195,13 +195,15 @@ body {
         justify-content: center;
     }
 }
-
-@media (max-width: 768.98px) and (orientation: portrait) {
+@media (max-width: 768.98px) and (min-height: 590px) {
     .main-inner {
         max-width: 430px;
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+@media (max-width: 768.98px) and (orientation: portrait) {
     .main-buttons {
         margin-top: 15px;
         margin-bottom: 10px;
