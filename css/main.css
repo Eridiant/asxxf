@@ -189,6 +189,10 @@ body {
     }
     .main-inner {
         line-height: 1.5;
+        text-align: center;
+    }
+    .main-link {
+        justify-content: center;
     }
 }
 
@@ -201,9 +205,6 @@ body {
     .main-buttons {
         margin-top: 15px;
         margin-bottom: 10px;
-    }
-    .main-inner {
-        text-align: center;
     }
 }
 .contact-modal li {
