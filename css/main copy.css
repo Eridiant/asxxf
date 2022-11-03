@@ -153,6 +153,9 @@ body {
 .main h2 {
     margin-bottom: 2.5vh;
 }
+.main-wrapper {
+    height: 50%;
+}
 @media (min-width: 768px) {
     .main-wrapper {
         flex-basis: 50%;

@@ -6792,12 +6792,12 @@ html {
     display: flex;
 }
 
-body {
+/* body {
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-}
+} */
 
 .header,
 .footer {
@@ -7073,8 +7073,6 @@ button.strwf_form-button:after {
 @media (max-width: 767px) {
     .header {
         position: absolute;
-
-        background: #fff;
     }
 }
 .header-wrap {
@@ -7432,7 +7430,7 @@ button.strwf_form-button:after {
 
 .contact-modal {
     display: none;
-    position: fixed;
+    position: absolute;
     z-index: 101;
     top: 50%;
     left: 50%;
@@ -7444,9 +7442,9 @@ button.strwf_form-button:after {
 /* .contact-modal.active {
     right: 0;
 } */
-.contact-modal-wrap {
+/* .contact-modal-wrap {
     width: 100%;
-}
+} */
 .contact-modal-close {
     position: absolute;
     top: 18px;
@@ -7686,7 +7684,7 @@ body {
 }
 @media (max-width: 767px) {
     body {
-        padding-top: 62px !important;
+        /* padding-top: 62px !important; */
 		font-size: 16.5px;
     }
 }
@@ -7955,7 +7953,7 @@ body {
     font-weight: 200;
     line-height: 1;
     position: relative;
-    margin-bottom: -3vh;
+    margin-bottom: 5vh;
     padding-left: 2.2vw;
     letter-spacing: .02em;
     color: #272b4e;
