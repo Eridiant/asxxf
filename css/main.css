@@ -35,7 +35,7 @@ body {
         padding-top: 10px;
     }
 }
-@media (max-width: 768.98px) {
+@media (max-width: 768.98px) and (orientation: landscape) {
     .header-logo {
         align-items: flex-start;
     }
@@ -93,10 +93,19 @@ body {
     max-width: 50%;
 }
 .main-buttons .btn {
-    height: 7vh;
     min-height: 50px;
     max-height: 70px;
-    border-radius: 1.5vh;
+    border-radius: 1vh;
+}
+@supports (aspect-ratio: 5 / 1) {
+    .main-buttons .btn {
+        aspect-ratio: 5 / 1
+    }
+}
+@supports not (aspect-ratio: 5 / 1) {
+    .main-buttons .btn {
+        height: 55px
+    }
 }
 .main-buttons svg {
     height: 100%;
@@ -218,6 +227,23 @@ body {
         width: 75vw;
         min-width: 850px;
     }
+    .contact-modal-close {
+        top: -40px;
+        right: 10px;
+    }
+}
+@media (min-width: 968px) {
+    .contact-modal {
+        width: 75vw;
+        min-width: 850px;
+    }
+    .contact-modal-close {
+        top: -18px;
+        right: -18px;
+    }
+}
+.contact-modal-close {
+    background: url('../img/design/ico/close-dark.svg') center no-repeat transparent;
 }
 .contact-modal-wrap {
     display: flex;
@@ -235,11 +261,25 @@ body {
 	padding: 9vh 4vw 9vh 7.7vw;
 }
 @media (max-width: 768.98px) {
+    .contact-modal-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        flex-shrink: 0;
+        min-width: 320px;
+    }
     .contact-modal-text, .contact-modal-form-subtitle, .contact-modal-form-text {
         display: none;
     }
     .contact-modal-form-title {
         padding-bottom: 4vh;
+    }
+}
+@media (max-width: 768.98px) and (orientation: portrait) {
+    .contact-modal-form {
+        max-width: 450px;
     }
 }
 @media (min-width: 769px) {
@@ -249,14 +289,19 @@ body {
         margin-right: 2vw;
         background-color: #eff0f2;
     }
+    .modal-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, .25);
+        backdrop-filter: blur(9px);
+        z-index: 100;
+    }
 }
 @media (max-width: 768.98px) and (orientation: landscape) {
     .contact-modal-wrap {
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        flex-shrink: 0;
-        min-width: 320px;
         padding: 7vh 3.3vw;
     }
     .contact-modal-form {
@@ -275,8 +320,30 @@ body {
 .form-alt-action .btn {
     line-height: 2.2;
 }
-.contact-modal.active {
+.contact-modal {
+    opacity: 0;
+}
+
+.active .contact-modal {
     display: flex;
+    opacity: 1;
+    animation: slidein .5s ease 1;
+}
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-wrapper {
+    display: none;
+}
+.active.modal-wrapper {
+    display: block;
 }
 .contact-modal-text .contact-modal-form-title {
     margin-left: 3vh;
@@ -338,39 +405,9 @@ ul.contact-modal-item{
     }
 }
 
-/* .subscribe-form {
-	width: 20vw !important;
-	min-width: 430px !important;
+.contact-modal-form-form a {
+    color: #bfa883 !important;
 }
-@media (max-width: 1599px) {
-.subscribe-form {
-	width: 400px !important;
-	min-width: 400px !important;
-	max-width: 400px !important;
-}
-}
-@media (max-width: 1279px) {
-.subscribe-form {
-	width: 370px !important;
-	min-width: 370px !important;
-	max-width: 370px !important;
-}
-}
-@media (max-width: 767px) {
-.subscribe-form {
-	width: 400px !important;
-	min-width: 400px !important;
-	max-width: 400px !important;
-	margin: auto;
-}
-}
-@media (max-width: 477px) {
-.subscribe-form {
-	width: 100% !important;
-	min-width: 100% !important;
-	max-width: 100% !important;
-}
-} */
 
 .jcwf_container .strwf__input-wrapper {
     position: relative;
@@ -433,6 +470,9 @@ button.strwf_form-button {
     text-transform: uppercase !important;
     color: #fff !important;
     background-color: #c9b493 !important;
+}
+button.strwf_form-button::after {
+    display: none;
 }
 body form[id='600f0b269fe18633ce000039'] .strwf_form-button:hover {
     opacity: 1 !important;

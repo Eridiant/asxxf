@@ -7453,7 +7453,7 @@ button.strwf_form-button:after {
     height: 16px;
     transition: .5s;
     cursor: pointer;
-    background: url('../img/design/ico/close.png') center no-repeat transparent;
+    background: url('../img/design/ico/close-dark.svg') center no-repeat transparent;
 }
 .contact-modal-close:hover {
     opacity: .7;
