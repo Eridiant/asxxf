@@ -6923,7 +6923,7 @@ body a.btn svg {
     }
 }
 
-.subscribe-form {
+/* .subscribe-form {
 	width: 20vw !important;
 	min-width: 430px !important;
 }
@@ -6955,7 +6955,7 @@ body a.btn svg {
 	min-width: 100% !important;
 	max-width: 100% !important;
 }
-}
+} */
 
 .jcwf_container .strwf__input-wrapper {
     position: relative;
@@ -6984,7 +6984,7 @@ input.strwf__input {
 }
 .strwf__radio-wrapper a {
     font-family: 'Open Sans', sans-serif !important;
-	font-size: max(0.80vw, 15px) !important;
+	font-size: max(0.82vw, 15.5px) !important;
     font-weight: 300 !important;
 }
 @media (max-width: 767px) {
@@ -8699,7 +8699,7 @@ a.link-more:hover svg path {
 }
 
 .checkbox a {
-font-size: max(0.80vw, 15px);
+font-size: max(0.82vw, 15.5px);
 color: #bfa883;
 }
 .checkbox a:hover {
