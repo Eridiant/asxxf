@@ -243,7 +243,10 @@ body {
     }
 }
 .contact-modal-close {
+	width: 16px;
+    height: 17px;
     background: url('../img/design/ico/close-dark.svg') center no-repeat transparent;
+    z-index: 111;
 }
 .contact-modal-wrap {
     display: flex;
