@@ -279,6 +279,9 @@ body {
     .contact-modal-form-title {
         padding-bottom: 4vh;
     }
+    .contact-modal {
+        height: 100%;
+    }
 }
 @media (max-width: 768.98px) and (orientation: portrait) {
     .contact-modal-form {
@@ -325,7 +328,6 @@ body {
 }
 .contact-modal {
     opacity: 0;
-    height: 100%;
 }
 
 .active .contact-modal {
