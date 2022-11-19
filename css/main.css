@@ -351,10 +351,11 @@ body {
 .active.modal-wrapper {
     display: block;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 111;
 }
 .contact-modal-text .contact-modal-form-title {
     margin-left: 3vh;
