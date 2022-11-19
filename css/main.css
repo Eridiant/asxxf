@@ -325,6 +325,7 @@ body {
 }
 .contact-modal {
     opacity: 0;
+    height: 100%;
 }
 
 .active .contact-modal {
